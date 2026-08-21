@@ -1,10 +1,9 @@
 # Vandra
 
-A complete Design System for [Better Email](https://better.email), kept as
-files — the full email program of Vandra, a fictional Norwegian hiking-gear
-brand. Eight production-grade Modules, a Template Base, and a single Global
-script holding every brand token: an example of a finished Design System, not
-a scaffold to build on.
+A complete example Design System for [Better Email](https://better.email),
+kept as files: the emails of Vandra, a fictional Norwegian hiking-gear brand.
+Eight Modules, a Template Base, and one Global script holding every brand
+token.
 
 The palette is trail-marker orange (`blaze`, #E4572E) on muted forest greens
 and paper tones; type is Archivo for headlines, Inter for body, IBM Plex Mono
@@ -13,13 +12,10 @@ layout with inline styles in a 640px container. CTAs are VML roundrects with
 `mso` fallbacks, so Outlook renders real buttons. Web fonts degrade to
 Helvetica/Arial/Courier stacks.
 
-This is the same Design System you see in Better Email demos — kept in sync
-with the live version, so what's in this repo is what renders in the product.
-
 [<img src=".github/sample-email-preview.png" alt="The opening of a Vandra campaign email: header, hero image, and headline “Made for the way out”" width="480">](.github/sample-email.png)
 
-*"The Trail Collection is here" — a campaign built entirely from these
-Modules. Click through for [the full email](.github/sample-email.png).*
+*"The Trail Collection is here", a campaign built from these Modules. Click
+through for [the full email](.github/sample-email.png).*
 
 ## Quickstart
 
@@ -61,7 +57,7 @@ in the app. `better ds check` works offline and needs no credentials.
 | Values strip | Compact row of brand promises |
 | Outro | Closing CTA section |
 
-Header and footer live in the Template Base (`base.liquid`), not as Modules.
+Header and footer live in the Template Base (`base.liquid`).
 
 ## File layout
 
