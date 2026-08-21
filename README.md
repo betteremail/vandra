@@ -16,6 +16,11 @@ Helvetica/Arial/Courier stacks.
 This is the same Design System you see in Better Email demos — kept in sync
 with the live version, so what's in this repo is what renders in the product.
 
+[<img src=".github/sample-email-preview.png" alt="The opening of a Vandra campaign email: header, hero image, and headline “Made for the way out”" width="480">](.github/sample-email.png)
+
+*"The Trail Collection is here" — a campaign built entirely from these
+Modules. Click through for [the full email](.github/sample-email.png).*
+
 ## Quickstart
 
 ```sh
