@@ -1,8 +1,0 @@
-{
-  "$schema": "https://app.better.email/schemas/module.schema.json",
-  "hidden": true,
-  "id": "c9637e54-9436-4414-965d-fcc5caafbc87",
-  "key": "header",
-  "metadata": {},
-  "name": "Header (deprecated — now in Template Base)"
-}

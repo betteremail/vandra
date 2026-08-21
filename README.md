@@ -1,9 +1,10 @@
 # Vandra
 
-A complete starter Design System for [Better Email](https://better.email),
-kept as files. It's the email program of Vandra, a fictional Norwegian
-hiking-gear brand — eight production-grade Modules, a Template Base, and a
-single Global script holding every brand token.
+A complete Design System for [Better Email](https://better.email), kept as
+files — the full email program of Vandra, a fictional Norwegian hiking-gear
+brand. Eight production-grade Modules, a Template Base, and a single Global
+script holding every brand token: an example of a finished Design System, not
+a scaffold to build on.
 
 The palette is trail-marker orange (`blaze`, #E4572E) on muted forest greens
 and paper tones; type is Archivo for headlines, Inter for body, IBM Plex Mono
@@ -55,9 +56,7 @@ in the app. `better ds check` works offline and needs no credentials.
 | Values strip | Compact row of brand promises |
 | Outro | Closing CTA section |
 
-Header and footer live in the Template Base (`base.liquid`), not as Modules —
-the two hidden `header`/`footer` Module directories are deprecated remnants
-kept for compatibility with older campaigns.
+Header and footer live in the Template Base (`base.liquid`), not as Modules.
 
 ## File layout
 

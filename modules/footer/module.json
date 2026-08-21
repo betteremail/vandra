@@ -1,8 +1,0 @@
-{
-  "$schema": "https://app.better.email/schemas/module.schema.json",
-  "hidden": true,
-  "id": "00265bdb-97e7-4149-a896-6c0df8d9d53f",
-  "key": "footer",
-  "metadata": {},
-  "name": "Footer (deprecated — now in Template Base)"
-}
