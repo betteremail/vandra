@@ -74,7 +74,7 @@ modules/<key>/
 
 Every JSON file carries a `$schema` link, so an editor with JSON Schema
 support autocompletes input types, constraints and metadata as you type. The
-[Better Email VS Code extension](https://marketplace.visualstudio.com/items?itemName=better-email.better-email)
+[Better Email VS Code extension](https://marketplace.visualstudio.com/items?itemName=better-email.better-email-design-systems)
 adds Liquid autocomplete for settings and the render context.
 
 ## Brand tokens
