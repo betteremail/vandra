@@ -49,65 +49,104 @@ a:visited { color: #1A2420; }
 </head>
 <body class="bg-page" style="margin:0; padding:0; background-color:#EEF0EC;">
 <table width="100%" cellspacing="0" cellpadding="0" border="0" class="bg-page" style="background-color:#EEF0EC;">
-<tr>
-<td align="center">
-<table class="w-full" width="640" cellspacing="0" cellpadding="0" border="0" style="width:640px;">
-<tr><td height="28" style="height:28px;">&nbsp;</td></tr>
-<tr><td>
-<table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-<td width="40" style="width:40px;">&nbsp;</td>
-<td align="left" valign="middle">
-<a href="{{ template.header_brand.url.url }}" target="_blank">
-<table cellspacing="0" cellpadding="0" border="0"><tr>
-<td valign="middle" width="30" style="width:30px;">{{ template.header_brand.logo | imgTag: width: 30, height: 30, dpr: 3, altText: "Vandra" }}</td>
-<td valign="middle" width="12" style="width:12px;">&nbsp;</td>
-<td valign="middle" class="tx-ink" style="font-family:{{ global.font_heading }}; font-weight:900; font-size:20px; line-height:30px; letter-spacing:4px; color:{{ global.ink }};">VANDRA</td>
-</tr></table>
-</a>
-</td>
-<td align="right" valign="middle" class="hide" style="font-family:{{ global.font_mono }}; font-size:11px; line-height:30px; letter-spacing:2px; color:{{ global.granite }};">
-{% for link in template.header_nav %}<a href="{{ link.url.url }}" target="_blank" class="tx-body" style="color:{{ global.granite }};">{{ link.label }}</a>{% unless forloop.last %}&nbsp;·&nbsp;{% endunless %}{% endfor %}
-</td>
-<td width="40" style="width:40px;">&nbsp;</td>
-</tr></table>
-</td></tr>
-<tr><td height="24" style="height:24px;">&nbsp;</td></tr>
-</table>
-{{ content }}
-<table class="w-full" width="640" cellspacing="0" cellpadding="0" border="0" style="width:640px;">
-<tr><td style="background-color:{{ global.ink }};">
-<table width="100%" cellspacing="0" cellpadding="0" border="0">
-<tr><td height="52" style="height:52px;">&nbsp;</td></tr>
-<tr>
-<td width="40" style="width:40px;">&nbsp;</td>
-<td align="center">
-<table width="100%" cellspacing="0" cellpadding="0" border="0">
-<tr><td align="center" style="font-family:{{ global.font_heading }}; font-weight:900; font-size:22px; line-height:28px; letter-spacing:6px; color:#F2F5F0;">VANDRA</td></tr>
-<tr><td height="8" style="height:8px; font-size:1px; line-height:1px; mso-line-height-rule:exactly;">&nbsp;</td></tr>
-<tr><td align="center" style="font-family:{{ global.font_mono }}; font-size:11px; line-height:16px; letter-spacing:2px; color:#93A096;">{{ template.footer_content.tagline }}</td></tr>
-<tr><td height="28" style="height:28px;">&nbsp;</td></tr>
-<tr><td align="center" style="font-family:{{ global.font_mono }}; font-weight:600; font-size:12px; line-height:16px; letter-spacing:2px; color:#F2F5F0;">
-<a href="{{ template.footer_content.instagram_url.url }}" target="_blank" style="color:#F2F5F0; text-decoration:none;">INSTAGRAM</a><span style="color:#93A096;">&nbsp;·&nbsp;</span><a href="{{ template.footer_content.youtube_url.url }}" target="_blank" style="color:#F2F5F0; text-decoration:none;">YOUTUBE</a><span style="color:#93A096;">&nbsp;·&nbsp;</span><a href="{{ template.footer_content.strava_url.url }}" target="_blank" style="color:#F2F5F0; text-decoration:none;">STRAVA</a>
-</td></tr>
-<tr><td height="32" style="height:32px;">&nbsp;</td></tr>
-<tr><td style="border-top:1px solid #33413A; font-size:1px; line-height:1px; mso-line-height-rule:exactly;">&nbsp;</td></tr>
-<tr><td height="24" style="height:24px;">&nbsp;</td></tr>
-<tr><td align="center" style="font-family:{{ global.font_body }}; font-size:12px; line-height:20px; color:#93A096;">{{ template.footer_content.company_address }}</td></tr>
-<tr><td align="center" style="font-family:{{ global.font_body }}; font-size:12px; line-height:20px; color:#93A096;">{{ template.footer_content.signup_note }}</td></tr>
-<tr><td height="16" style="height:16px; font-size:1px; line-height:1px; mso-line-height-rule:exactly;">&nbsp;</td></tr>
-<tr><td align="center" style="font-family:{{ global.font_body }}; font-size:12px; line-height:20px; color:#93A096;">
-<a href="https://vandra.example/unsubscribe" target="_blank" style="color:#93A096; text-decoration:underline;">Unsubscribe</a><span>&nbsp;·&nbsp;</span><a href="https://vandra.example/preferences" target="_blank" style="color:#93A096; text-decoration:underline;">Preferences</a><span>&nbsp;·&nbsp;</span><a href="https://vandra.example/view" target="_blank" style="color:#93A096; text-decoration:underline;">View in browser</a>
-</td></tr>
-</table>
-</td>
-<td width="40" style="width:40px;">&nbsp;</td>
-</tr>
-<tr><td height="52" style="height:52px;">&nbsp;</td></tr>
-</table>
-</td></tr>
-</table>
-</td>
-</tr>
+  <tr>
+    <td align="center">
+      <table class="w-full" width="640" cellspacing="0" cellpadding="0" border="0" style="width:640px;">
+        <tr>
+          <td height="28" style="height:28px;">&nbsp;</td>
+        </tr>
+        <tr>
+          <td>
+            <table width="100%" cellspacing="0" cellpadding="0" border="0">
+              <tr>
+                <td width="40" style="width:40px;">&nbsp;</td>
+                <td align="left" valign="middle">
+                  <a href="{{ template.header_brand.url.url }}" target="_blank">
+                  <table cellspacing="0" cellpadding="0" border="0">
+                    <tr>
+                      <td valign="middle" width="30" style="width:30px;">{{ template.header_brand.logo | imgTag: width: 30, height: 30, dpr: 3, altText: "Vandra" }}</td>
+                      <td valign="middle" width="12" style="width:12px;">&nbsp;</td>
+                      <td valign="middle" class="tx-ink" style="font-family:{{ global.font_heading }}; font-weight:900; font-size:20px; line-height:30px; letter-spacing:4px; color:{{ global.ink }};">VANDRA</td>
+                    </tr>
+                  </table>
+                  </a>
+                </td>
+                <td align="right" valign="middle" class="hide" style="font-family:{{ global.font_mono }}; font-size:11px; line-height:30px; letter-spacing:2px; color:{{ global.granite }};">
+                  {% for link in template.header_nav %}<a href="{{ link.url.url }}" target="_blank" class="tx-body" style="color:{{ global.granite }};">{{ link.label }}</a>{% unless forloop.last %}&nbsp;·&nbsp;{% endunless %}
+                  {% endfor %}
+                </td>
+                <td width="40" style="width:40px;">&nbsp;</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td height="24" style="height:24px;">&nbsp;</td>
+        </tr>
+      </table>{{ content }}<table class="w-full" width="640" cellspacing="0" cellpadding="0" border="0" style="width:640px;">
+        <tr>
+          <td style="background-color:{{ global.ink }};">
+            <table width="100%" cellspacing="0" cellpadding="0" border="0">
+              <tr>
+                <td height="52" style="height:52px;">&nbsp;</td>
+              </tr>
+              <tr>
+                <td width="40" style="width:40px;">&nbsp;</td>
+                <td align="center">
+                  <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                    <tr>
+                      <td align="center" style="font-family:{{ global.font_heading }}; font-weight:900; font-size:22px; line-height:28px; letter-spacing:6px; color:#F2F5F0;">VANDRA</td>
+                    </tr>
+                    <tr>
+                      <td height="8" style="height:8px; font-size:1px; line-height:1px; mso-line-height-rule:exactly;">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td align="center" style="font-family:{{ global.font_mono }}; font-size:11px; line-height:16px; letter-spacing:2px; color:#93A096;">{{ template.footer_content.tagline }}</td>
+                    </tr>
+                    <tr>
+                      <td height="28" style="height:28px;">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td align="center" style="font-family:{{ global.font_mono }}; font-weight:600; font-size:12px; line-height:16px; letter-spacing:2px; color:#F2F5F0;">
+                        <a href="{{ template.footer_content.instagram_url.url }}" target="_blank" style="color:#F2F5F0; text-decoration:none;">INSTAGRAM</a><span style="color:#93A096;">&nbsp;·&nbsp;</span><a href="{{ template.footer_content.youtube_url.url }}" target="_blank" style="color:#F2F5F0; text-decoration:none;">YOUTUBE</a><span style="color:#93A096;">&nbsp;·&nbsp;</span><a href="{{ template.footer_content.strava_url.url }}" target="_blank" style="color:#F2F5F0; text-decoration:none;">STRAVA</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td height="32" style="height:32px;">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td style="border-top:1px solid #33413A; font-size:1px; line-height:1px; mso-line-height-rule:exactly;">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td height="24" style="height:24px;">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td align="center" style="font-family:{{ global.font_body }}; font-size:12px; line-height:20px; color:#93A096;">{{ template.footer_content.company_address }}</td>
+                    </tr>
+                    <tr>
+                      <td align="center" style="font-family:{{ global.font_body }}; font-size:12px; line-height:20px; color:#93A096;">{{ template.footer_content.signup_note }}</td>
+                    </tr>
+                    <tr>
+                      <td height="16" style="height:16px; font-size:1px; line-height:1px; mso-line-height-rule:exactly;">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td align="center" style="font-family:{{ global.font_body }}; font-size:12px; line-height:20px; color:#93A096;">
+                        <a href="https://vandra.example/unsubscribe" target="_blank" style="color:#93A096; text-decoration:underline;">Unsubscribe</a><span>&nbsp;·&nbsp;</span><a href="https://vandra.example/preferences" target="_blank" style="color:#93A096; text-decoration:underline;">Preferences</a><span>&nbsp;·&nbsp;</span><a href="https://vandra.example/view" target="_blank" style="color:#93A096; text-decoration:underline;">View in browser</a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td width="40" style="width:40px;">&nbsp;</td>
+              </tr>
+              <tr>
+                <td height="52" style="height:52px;">&nbsp;</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
 </table>
 </body>
 </html>

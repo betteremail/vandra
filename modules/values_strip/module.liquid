@@ -1,26 +1,46 @@
 <table class="w-full" width="640" cellspacing="0" cellpadding="0" border="0" style="width:640px;">
-<tr><td class="bg-mist" style="background-color:{{ band.background }};">
-<table width="100%" cellspacing="0" cellpadding="0" border="0">
-<tr><td colspan="7" height="40" style="height:40px;">&nbsp;</td></tr>
-<tr>
-<td width="40" style="width:40px;">&nbsp;</td>
-{% assign count = stats | size %}
-{% if count < 3 %}<td>&nbsp;</td>{% endif %}
-{% for stat in stats %}
-<td class="break" width="172" valign="top" style="width:172px;">
-<table width="100%" cellspacing="0" cellpadding="0" border="0">
-<tr><td align="center" class="tx-ink" style="font-family:{{ global.font_heading }}; font-weight:900; font-size:24px; line-height:28px; color:{{ global.deep }};">{{ stat.value }}</td></tr>
-<tr><td height="6" style="height:6px; font-size:1px; line-height:1px; mso-line-height-rule:exactly;">&nbsp;</td></tr>
-<tr><td align="center" class="tx-body" style="font-family:{{ global.font_mono }}; font-size:11px; line-height:16px; letter-spacing:1px; color:{{ global.granite }};">{{ stat.label }}</td></tr>
-<tr><td height="24" style="height:24px;">&nbsp;</td></tr>
-</table>
-</td>
-{% unless forloop.last %}<td class="hide" width="22" style="width:22px;">&nbsp;</td>{% endunless %}
-{% endfor %}
-{% if count < 3 %}<td>&nbsp;</td>{% endif %}
-<td width="40" style="width:40px;">&nbsp;</td>
-</tr>
-<tr><td colspan="7" height="16" style="height:16px; font-size:1px; line-height:1px; mso-line-height-rule:exactly;">&nbsp;</td></tr>
-</table>
-</td></tr>
+  <tr>
+    <td class="bg-mist" style="background-color:{{ band.background }};">
+      <table width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tr>
+          <td colspan="7" height="40" style="height:40px;">&nbsp;</td>
+        </tr>
+        <tr>
+          <td width="40" style="width:40px;">&nbsp;</td>
+          {% assign count = stats | size %}
+          {% if count < 3 %}
+          <td>&nbsp;</td>
+          {% endif %}
+          {% for stat in stats %}
+          <td class="break" width="172" valign="top" style="width:172px;">
+            <table width="100%" cellspacing="0" cellpadding="0" border="0">
+              <tr>
+                <td align="center" class="tx-ink" style="font-family:{{ global.font_heading }}; font-weight:900; font-size:24px; line-height:28px; color:{{ global.deep }};">{{ stat.value }}</td>
+              </tr>
+              <tr>
+                <td height="6" style="height:6px; font-size:1px; line-height:1px; mso-line-height-rule:exactly;">&nbsp;</td>
+              </tr>
+              <tr>
+                <td align="center" class="tx-body" style="font-family:{{ global.font_mono }}; font-size:11px; line-height:16px; letter-spacing:1px; color:{{ global.granite }};">{{ stat.label }}</td>
+              </tr>
+              <tr>
+                <td height="24" style="height:24px;">&nbsp;</td>
+              </tr>
+            </table>
+          </td>
+          {% unless forloop.last %}
+          <td class="hide" width="22" style="width:22px;">&nbsp;</td>
+          {% endunless %}
+          {% endfor %}
+          {% if count < 3 %}
+          <td>&nbsp;</td>
+          {% endif %}
+          <td width="40" style="width:40px;">&nbsp;</td>
+        </tr>
+        <tr>
+          <td colspan="7" height="16" style="height:16px; font-size:1px; line-height:1px; mso-line-height-rule:exactly;">&nbsp;</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
 </table>

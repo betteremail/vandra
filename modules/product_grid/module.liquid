@@ -1,43 +1,92 @@
 <table class="w-full" width="640" cellspacing="0" cellpadding="0" border="0" style="width:640px;">
-<tr><td height="56" style="height:56px;">&nbsp;</td></tr>
-<tr><td align="center">
-<table cellspacing="0" cellpadding="0" border="0"><tr>
-<td width="10" height="10" style="width:10px; height:10px; background-color:{{ global.blaze }}; font-size:1px; line-height:1px; mso-line-height-rule:exactly;">&nbsp;</td>
-<td width="14" style="width:14px; font-size:1px;">&nbsp;</td>
-<td style="font-family:{{ global.font_mono }}; font-weight:600; font-size:12px; line-height:14px; letter-spacing:3px; color:{{ global.blaze }};">{{ grid.waypoint }}</td>
-</tr></table>
-</td></tr>
-<tr><td height="18" style="height:18px;">&nbsp;</td></tr>
-<tr><td align="center" class="tx-ink" style="font-family:{{ global.font_heading }}; font-weight:800; font-size:28px; line-height:34px; color:{{ global.ink }}; text-transform:uppercase;">{{ grid.heading }}</td></tr>
-<tr><td height="36" style="height:36px;">&nbsp;</td></tr>
-<tr><td>
-<table width="100%" cellspacing="0" cellpadding="0" border="0">
-{% for product in products %}
-{% assign draw_url = "" %}
-{% if product.badge == "new" %}{% assign draw_url = global.badge_new_url %}
-{% elsif product.badge == "sale" %}{% if product.sale_discount != blank %}{% assign disc = product.sale_discount %}{% else %}{% assign disc = "20" %}{% endif %}{% assign sale_key = "badge_sale_" | append: disc %}{% assign draw_url = global[sale_key] %}{% endif %}
-{% assign col_mod = forloop.index0 | modulo: 2 %}
-{% if col_mod == 0 %}<tr>
-<td width="40" style="width:40px;">&nbsp;</td>{% endif %}
-<td class="break" width="268" valign="top" style="width:268px;">
-<a href="{{ product.url.url }}" target="_blank">
-{% if draw_url != blank %}{{ product.image | imgTag: width: 268, height: 268, dpr: 2, class: "w-full", altText: product.name, draw1_url: draw_url, draw1_width: 100, draw1_top: 20, draw1_left: 20 }}{% else %}{{ product.image | imgTag: width: 268, height: 268, dpr: 2, class: "w-full", altText: product.name }}{% endif %}
-</a>
-<table width="100%" cellspacing="0" cellpadding="0" border="0">
-<tr><td height="16" style="height:16px; font-size:1px; line-height:1px; mso-line-height-rule:exactly;">&nbsp;</td></tr>
-<tr><td>
-<table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-<td valign="top" class="tx-ink" style="font-family:{{ global.font_heading }}; font-weight:800; font-size:15px; line-height:20px; letter-spacing:1px; color:{{ global.ink }};">{{ product.name }}</td>
-<td valign="top" align="right" style="font-family:{{ global.font_mono }}; font-weight:600; font-size:13px; line-height:20px; color:{{ global.blaze }};">{{ product.price }}</td>
-</tr></table>
-</td></tr>
-<tr><td height="6" style="height:6px; font-size:1px; line-height:1px; mso-line-height-rule:exactly;">&nbsp;</td></tr>
-<tr><td class="tx-body" style="font-family:{{ global.font_body }}; font-size:13px; line-height:20px; color:{{ global.granite }};">{{ product.tagline }}</td></tr>
-<tr><td height="32" style="height:32px;">&nbsp;</td></tr>
-</table>
-</td>
-{% if col_mod == 0 %}{% unless forloop.last %}<td class="hide" width="24" style="width:24px;">&nbsp;</td>{% else %}<td class="hide" width="24" style="width:24px;">&nbsp;</td><td class="break" width="268" style="width:268px;">&nbsp;</td><td width="40" style="width:40px;">&nbsp;</td></tr>{% endunless %}{% else %}<td width="40" style="width:40px;">&nbsp;</td></tr>{% endif %}
-{% endfor %}
-</table>
-</td></tr>
+  <tr>
+    <td height="56" style="height:56px;">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="center">
+      <table cellspacing="0" cellpadding="0" border="0">
+        <tr>
+          <td width="10" height="10" style="width:10px; height:10px; background-color:{{ global.blaze }}; font-size:1px; line-height:1px; mso-line-height-rule:exactly;">&nbsp;</td>
+          <td width="14" style="width:14px; font-size:1px;">&nbsp;</td>
+          <td style="font-family:{{ global.font_mono }}; font-weight:600; font-size:12px; line-height:14px; letter-spacing:3px; color:{{ global.blaze }};">{{ grid.waypoint }}</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td height="18" style="height:18px;">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="center" class="tx-ink" style="font-family:{{ global.font_heading }}; font-weight:800; font-size:28px; line-height:34px; color:{{ global.ink }}; text-transform:uppercase;">{{ grid.heading }}</td>
+  </tr>
+  <tr>
+    <td height="36" style="height:36px;">&nbsp;</td>
+  </tr>
+  <tr>
+    <td>
+      <table width="100%" cellspacing="0" cellpadding="0" border="0">
+        {% for product in products %}
+        {% assign draw_url = "" %}
+        {% if product.badge == "new" %}
+        {% assign draw_url = global.badge_new_url %}
+        {% elsif product.badge == "sale" %}
+        {% if product.sale_discount != blank %}
+        {% assign disc = product.sale_discount %}
+        {% else %}
+        {% assign disc = "20" %}
+        {% endif %}
+        {% assign sale_key = "badge_sale_" | append: disc %}
+        {% assign draw_url = global[sale_key] %}
+        {% endif %}
+        {% assign col_mod = forloop.index0 | modulo: 2 %}
+        {% if col_mod == 0 %}
+        <tr>
+          <td width="40" style="width:40px;">&nbsp;</td>
+          {% endif %}
+          <td class="break" width="268" valign="top" style="width:268px;">
+            <a href="{{ product.url.url }}" target="_blank">
+            {% if draw_url != blank %}{{ product.image | imgTag: width: 268, height: 268, dpr: 2, class: "w-full", altText: product.name, draw1_url: draw_url, draw1_width: 100, draw1_top: 20, draw1_left: 20 }}{% else %}{{ product.image | imgTag: width: 268, height: 268, dpr: 2, class: "w-full", altText: product.name }}{% endif %}
+            </a>
+            <table width="100%" cellspacing="0" cellpadding="0" border="0">
+              <tr>
+                <td height="16" style="height:16px; font-size:1px; line-height:1px; mso-line-height-rule:exactly;">&nbsp;</td>
+              </tr>
+              <tr>
+                <td>
+                  <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                    <tr>
+                      <td valign="top" class="tx-ink" style="font-family:{{ global.font_heading }}; font-weight:800; font-size:15px; line-height:20px; letter-spacing:1px; color:{{ global.ink }};">{{ product.name }}</td>
+                      <td valign="top" align="right" style="font-family:{{ global.font_mono }}; font-weight:600; font-size:13px; line-height:20px; color:{{ global.blaze }};">{{ product.price }}</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td height="6" style="height:6px; font-size:1px; line-height:1px; mso-line-height-rule:exactly;">&nbsp;</td>
+              </tr>
+              <tr>
+                <td class="tx-body" style="font-family:{{ global.font_body }}; font-size:13px; line-height:20px; color:{{ global.granite }};">{{ product.tagline }}</td>
+              </tr>
+              <tr>
+                <td height="32" style="height:32px;">&nbsp;</td>
+              </tr>
+            </table>
+          </td>
+          {% if col_mod == 0 %}
+          {% unless forloop.last %}
+          <td class="hide" width="24" style="width:24px;">&nbsp;</td>
+          {% else %}
+          <td class="hide" width="24" style="width:24px;">&nbsp;</td>
+          <td class="break" width="268" style="width:268px;">&nbsp;</td>
+          <td width="40" style="width:40px;">&nbsp;</td>
+        </tr>
+        {% endunless %}
+        {% else %}
+        <td width="40" style="width:40px;">&nbsp;</td>
+      </tr>
+      {% endif %}
+      {% endfor %}
+    </table>
+  </td>
+</tr>
 </table>
