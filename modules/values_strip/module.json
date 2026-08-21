@@ -1,0 +1,19 @@
+{
+  "$schema": "https://app.better.email/schemas/module.schema.json",
+  "hidden": false,
+  "id": "2e7ff009-3b3f-472b-abac-e3d61bcec5b9",
+  "key": "values_strip",
+  "metadata": {
+    "thumbnail": {
+      "altText": "",
+      "fileSize": 29296,
+      "format": "image/png",
+      "height": 234,
+      "isResizable": true,
+      "type": "upload",
+      "url": "https://assets.better.email/1/84a93a6d-c68f-4862-8225-3d1e1d0c9161.png",
+      "width": 1026
+    }
+  },
+  "name": "Values strip"
+}

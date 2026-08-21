@@ -1,0 +1,19 @@
+{
+  "$schema": "https://app.better.email/schemas/module.schema.json",
+  "hidden": false,
+  "id": "66a284d2-2fbf-41be-b95e-2d74b7d82594",
+  "key": "field_notes",
+  "metadata": {
+    "thumbnail": {
+      "altText": "",
+      "fileSize": 851986,
+      "format": "image/png",
+      "height": 1320,
+      "isResizable": true,
+      "type": "upload",
+      "url": "https://assets.better.email/1/d7ec0f05-4e66-45a6-a45f-2dc415d364ff.png",
+      "width": 1136
+    }
+  },
+  "name": "Field notes"
+}

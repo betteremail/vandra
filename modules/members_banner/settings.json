@@ -1,0 +1,81 @@
+{
+  "$schema": "https://app.better.email/schemas/settings.schema.json",
+  "settings": [
+    {
+      "id": "630d1a41-9b94-4f91-91eb-027bffeb96f3",
+      "inputs": [
+        {
+          "defaultValue": "VANDRA CIRCLE · MEMBERS",
+          "hint": "",
+          "id": "5a9bc4e1-3a11-469a-8f68-12030e045386",
+          "key": "label",
+          "name": "Label",
+          "showEmojiButton": false,
+          "type": "string"
+        },
+        {
+          "constraints": [
+            {
+              "type": "mandatory"
+            }
+          ],
+          "defaultValue": "FREE REPAIRS. FOR LIFE.",
+          "hint": "",
+          "id": "1dc1c466-7dad-4bd1-bbef-8a548a9532b7",
+          "key": "heading",
+          "name": "Heading",
+          "showEmojiButton": false,
+          "type": "string"
+        },
+        {
+          "colorOptions": [],
+          "customLinkAttributes": [],
+          "customTags": [],
+          "defaultValue": {
+            "rendered": "Every stitch we sell, we mend. Free, forever, for members.",
+            "type": "rich"
+          },
+          "enableColorPicker": false,
+          "hint": "",
+          "id": "adb55a8d-24a5-4782-a309-451f88cc3474",
+          "isTranslatable": false,
+          "key": "body",
+          "linkStyle": "",
+          "name": "Body",
+          "showEmojiButton": true,
+          "showMergeTagButton": true,
+          "translatable": true,
+          "type": "text"
+        },
+        {
+          "defaultValue": "Join the Circle",
+          "hint": "",
+          "id": "b498edeb-ad94-4e29-ac0c-11029fa7b897",
+          "key": "cta_label",
+          "name": "CTA Label",
+          "showEmojiButton": false,
+          "type": "string"
+        },
+        {
+          "allowMergeTags": false,
+          "allowNonWebSchemes": false,
+          "customLinkAttributes": [],
+          "defaultValue": {
+            "attributes": {},
+            "url": "https://vandra.example/circle"
+          },
+          "hint": "",
+          "id": "576de11f-f038-4b17-b15d-4684f2eba0ff",
+          "key": "cta_url",
+          "name": "CTA URL",
+          "requireHttps": true,
+          "type": "link"
+        }
+      ],
+      "key": "banner",
+      "name": "Banner",
+      "repeatable": false,
+      "useFeed": false
+    }
+  ]
+}

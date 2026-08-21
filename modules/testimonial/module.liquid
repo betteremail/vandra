@@ -1,0 +1,29 @@
+<table class="w-full" width="640" cellspacing="0" cellpadding="0" border="0" style="width:640px;">
+{% if tst.waypoint != blank %}
+<tr><td height="56" style="height:56px;">&nbsp;</td></tr>
+<tr><td align="center">
+<table cellspacing="0" cellpadding="0" border="0"><tr>
+<td width="10" height="10" style="width:10px; height:10px; background-color:{{ global.blaze }}; font-size:1px; line-height:1px; mso-line-height-rule:exactly;">&nbsp;</td>
+<td width="14" style="width:14px; font-size:1px;">&nbsp;</td>
+<td style="font-family:{{ global.font_mono }}; font-weight:600; font-size:12px; line-height:14px; letter-spacing:3px; color:{{ global.blaze }};">{{ tst.waypoint }}</td>
+</tr></table>
+</td></tr>
+<tr><td height="32" style="height:32px;">&nbsp;</td></tr>
+{% endif %}
+<tr><td>
+<table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
+<td width="80" style="width:80px;">&nbsp;</td>
+<td align="center" class="h-quote tx-ink" style="font-family:{{ global.font_heading }}; font-weight:700; font-size:24px; line-height:34px; color:{{ global.ink }};">{{ tst.quote }}</td>
+<td width="80" style="width:80px;">&nbsp;</td>
+</tr></table>
+</td></tr>
+<tr><td height="24" style="height:24px;">&nbsp;</td></tr>
+<tr><td align="center">
+{% if tst.verified %}{{ tst.avatar | imgTag: width: 80, height: 80, dpr: 3, style: "border-radius:40px;", draw1_url: global.badge_verified_url, draw1_width: 63, draw1_bottom: 26, draw1_right: 26 }}{% else %}{{ tst.avatar | imgTag: width: 80, height: 80, dpr: 3, style: "border-radius:40px;" }}{% endif %}
+</td></tr>
+<tr><td height="16" style="height:16px; font-size:1px; line-height:1px; mso-line-height-rule:exactly;">&nbsp;</td></tr>
+<tr><td align="center" style="font-family:{{ global.font_mono }}; font-size:14px; line-height:18px; letter-spacing:4px; color:{{ global.blaze }};">{% assign stars = tst.rating | round %}{% for i in (1..stars) %}★{% endfor %}</td></tr>
+<tr><td height="10" style="height:10px; font-size:1px; line-height:1px; mso-line-height-rule:exactly;">&nbsp;</td></tr>
+<tr><td align="center" class="tx-faint" style="font-family:{{ global.font_mono }}; font-size:12px; line-height:18px; letter-spacing:2px; color:{{ global.faint }};">{{ tst.attribution }}</td></tr>
+<tr><td height="56" style="height:56px;">&nbsp;</td></tr>
+</table>

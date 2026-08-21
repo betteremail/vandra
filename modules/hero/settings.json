@@ -1,0 +1,173 @@
+{
+  "$schema": "https://app.better.email/schemas/settings.schema.json",
+  "settings": [
+    {
+      "id": "1df2544a-e427-41b6-aa60-45346a9e6b25",
+      "inputs": [
+        {
+          "altTextRequired": true,
+          "constraints": [
+            {
+              "message": "A hero image is required",
+              "type": "mandatory"
+            }
+          ],
+          "defaultValue": {
+            "altText": "A hiker on a narrow trail high above a misty Norwegian fjord",
+            "height": 1152,
+            "type": "url",
+            "url": "https://assets.better.email/1/46463d26-3e73-4ee2-8d37-d4f9be33d0c9.jpg",
+            "width": 1024
+          },
+          "dpr": 1,
+          "hint": "",
+          "id": "5d3ecf6a-4cc2-47e3-8c27-14a9942365ce",
+          "key": "image",
+          "name": "Image",
+          "showAltText": true,
+          "type": "image"
+        },
+        {
+          "constraints": [
+            {
+              "max": 900,
+              "message": "Choose a height between 300 and 900 pixels",
+              "min": 300,
+              "type": "minMax"
+            }
+          ],
+          "defaultValue": 720,
+          "hint": "Controls the rendered height of the hero image (in pixels).",
+          "id": "8f2b0576-7d24-44f9-8814-697350122ebb",
+          "key": "image_height",
+          "name": "Image Height",
+          "showAsSlider": true,
+          "step": 10,
+          "type": "number"
+        },
+        {
+          "constraints": [
+            {
+              "message": "Keep the waypoint under 60 characters",
+              "type": "maxChar",
+              "value": 60
+            }
+          ],
+          "defaultValue": "WP 01 · TRAILHEAD — 61.6367° N, 8.3125° E",
+          "hint": "",
+          "id": "923bf610-ddb9-4bc9-a8bc-87c64532bb3b",
+          "key": "waypoint",
+          "name": "Waypoint",
+          "showEmojiButton": false,
+          "type": "string"
+        },
+        {
+          "constraints": [
+            {
+              "type": "mandatory"
+            },
+            {
+              "message": "Keep the headline under 48 characters",
+              "type": "maxChar",
+              "value": 48
+            }
+          ],
+          "defaultValue": "MADE FOR THE WAY OUT",
+          "hint": "",
+          "id": "249adcdd-c695-4c2f-b9fd-1181528cae85",
+          "key": "headline",
+          "name": "Headline",
+          "showEmojiButton": false,
+          "type": "string"
+        },
+        {
+          "colorOptions": [],
+          "constraints": [
+            {
+              "type": "mandatory"
+            },
+            {
+              "message": "Keep the hero body under 200 characters",
+              "type": "maxChar",
+              "value": 200
+            }
+          ],
+          "customLinkAttributes": [],
+          "customTags": [],
+          "defaultValue": {
+            "rendered": "Fourteen months in Jotunheimen. Four hundred kilometres of sideways rain. Four pieces that earned the name. The Trail Collection is here.",
+            "type": "rich"
+          },
+          "enableColorPicker": false,
+          "hint": "",
+          "id": "d9cff73b-f208-49b1-a352-e2e6c077d3d1",
+          "isTranslatable": false,
+          "key": "body",
+          "linkStyle": "",
+          "name": "Body",
+          "showEmojiButton": true,
+          "showMergeTagButton": true,
+          "translatable": true,
+          "type": "text"
+        },
+        {
+          "defaultValue": true,
+          "hint": "",
+          "id": "ad401aa4-91f9-4822-81f4-ba9079fd514f",
+          "key": "show_cta",
+          "name": "Show CTA",
+          "type": "boolean"
+        }
+      ],
+      "key": "hero",
+      "name": "Hero",
+      "repeatable": false,
+      "useFeed": false
+    },
+    {
+      "id": "3876f640-e1a4-44a6-b548-784717145e38",
+      "inputs": [
+        {
+          "constraints": [
+            {
+              "type": "mandatory"
+            }
+          ],
+          "defaultValue": "Shop the collection",
+          "hint": "",
+          "id": "087f3722-c660-4870-a56e-08d0fa5ed17f",
+          "key": "cta_label",
+          "name": "CTA Label",
+          "showEmojiButton": false,
+          "type": "string"
+        },
+        {
+          "allowMergeTags": false,
+          "allowNonWebSchemes": false,
+          "constraints": [
+            {
+              "message": "A destination URL is required",
+              "type": "mandatory"
+            }
+          ],
+          "customLinkAttributes": [],
+          "defaultValue": {
+            "attributes": {},
+            "url": "https://vandra.example/collections/trail"
+          },
+          "hint": "",
+          "id": "686f9239-131c-4aad-ba80-a823ae056f2c",
+          "key": "cta_url",
+          "name": "CTA URL",
+          "requireHttps": true,
+          "type": "link"
+        }
+      ],
+      "key": "cta",
+      "name": "Call to action",
+      "only_show_if": "hero.show_cta == true",
+      "repeatable": false,
+      "useFeed": false
+    }
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "$schema": "https://app.better.email/schemas/template-settings.schema.json",
+  "settings": [
+    {
+      "id": "__template_global_setting__",
+      "inputs": [],
+      "key": "global",
+      "name": "Global",
+      "repeatable": false,
+      "specialType": "global",
+      "transformLiquid": "{% comment %}\n  ============================================================\n  GLOBAL SCRIPT — brand tokens (single source of truth)\n  Runs once per render, before the template base and modules.\n  Reference anywhere in Liquid as {{ global.<key> }}.\n  These are FIXED brand values, not marketer-editable inputs.\n  ============================================================\n{% endcomment %}\n\n{% comment %} --- Colors --------------------------------------- {% endcomment %}\n{% set_global blaze = \"#E4572E\" %}   {% comment %} accent / CTA {% endcomment %}\n{% set_global ink = \"#1A2420\" %}     {% comment %} primary text {% endcomment %}\n{% set_global deep = \"#22372E\" %}    {% comment %} dark surfaces {% endcomment %}\n{% set_global paper = \"#EEF0EC\" %}   {% comment %} light background {% endcomment %}\n{% set_global mist = \"#E2E7E0\" %}    {% comment %} subtle background {% endcomment %}\n{% set_global granite = \"#5C6660\" %} {% comment %} secondary text {% endcomment %}\n{% set_global faint = \"#8A948D\" %}   {% comment %} muted / captions {% endcomment %}\n{% set_global line = \"#C9D1C6\" %}    {% comment %} borders / dividers {% endcomment %}\n\n{% comment %} --- Font stacks ---------------------------------- {% endcomment %}\n{% set_global font_heading = \"'Archivo','Helvetica Neue',Arial,sans-serif\" %}\n{% set_global font_body = \"'Inter','Helvetica Neue',Arial,sans-serif\" %}\n{% set_global font_mono = \"'IBM Plex Mono','Courier New',Courier,monospace\" %}\n\n{% comment %} --- Sale badges (by discount %) ------------------ {% endcomment %}\n{% set_global badge_sale_10 = \"https://assets.better.email/1/7ca80666-b735-4ee6-b6d5-f94644517ec3.png\" %}\n{% set_global badge_sale_15 = \"https://assets.better.email/1/badfb061-c1c8-4cb9-aad1-dbca57ab2a40.png\" %}\n{% set_global badge_sale_20 = \"https://assets.better.email/1/77516e6f-20e4-408f-93a8-e69b8b3df387.png\" %}\n{% set_global badge_sale_25 = \"https://assets.better.email/1/648a2898-c521-47a9-b01c-68008bbff91c.png\" %}\n{% set_global badge_sale_30 = \"https://assets.better.email/1/f2ccbae0-f7c3-425e-a614-c75a2ac5eb2f.png\" %}\n{% set_global badge_sale_35 = \"https://assets.better.email/1/6d88acc8-e4d6-43ce-8f21-5d290ee93d15.png\" %}\n{% set_global badge_sale_40 = \"https://assets.better.email/1/293080d5-2dfd-420d-b6f2-18d45ff215da.png\" %}\n{% set_global badge_sale_45 = \"https://assets.better.email/1/3ace139b-53ad-4468-b47e-7ce3e00e9b9e.png\" %}\n{% set_global badge_sale_50 = \"https://assets.better.email/1/63dff0cf-9a79-4798-80a6-11755c25b3e4.png\" %}\n\n{% comment %} --- Other badges & brand assets ------------------ {% endcomment %}\n{% set_global badge_new_url = \"https://assets.better.email/1/6e618d63-898c-4f1b-816d-8145a29a542a.png\" %}\n{% set_global badge_verified_url = \"https://assets.better.email/1/5c38be08-5e19-4686-b927-43ff8af5938e.png\" %}\n{% set_global stamp_url = \"https://assets.better.email/1/165e1663-eca3-4a61-8a69-da078c06cae4.png\" %}\n{% set_global logo_white_url = \"https://assets.better.email/1/979e18f4-3034-499f-a18d-170b53678608.png\" %}",
+      "useFeed": false
+    },
+    {
+      "id": "__template_shared_setting__",
+      "inputs": [
+        {
+          "defaultValue": "Vandra AS · Skomakergata 4 · 0301 Oslo, Norway",
+          "hint": "",
+          "id": "b51ea332-277b-4552-b294-86d47db77600",
+          "key": "company_address",
+          "name": "Company address",
+          "showEmojiButton": false,
+          "translatable": true,
+          "type": "string"
+        },
+        {
+          "allowMergeTags": false,
+          "allowNonWebSchemes": false,
+          "customLinkAttributes": [],
+          "defaultValue": {
+            "attributes": {},
+            "url": "https://instagram.com/vandra"
+          },
+          "hint": "",
+          "id": "5201dc8e-a128-4ea2-b7ff-d4761db9473c",
+          "key": "instagram_url",
+          "name": "Instagram URL",
+          "requireHttps": true,
+          "type": "link"
+        },
+        {
+          "allowMergeTags": false,
+          "allowNonWebSchemes": false,
+          "customLinkAttributes": [],
+          "defaultValue": {
+            "attributes": {},
+            "url": "https://youtube.com/@vandra"
+          },
+          "hint": "",
+          "id": "1534fa3c-f43b-495f-ac7c-8e10a0858b3b",
+          "key": "youtube_url",
+          "name": "YouTube URL",
+          "requireHttps": true,
+          "type": "link"
+        },
+        {
+          "allowMergeTags": false,
+          "allowNonWebSchemes": false,
+          "customLinkAttributes": [],
+          "defaultValue": {
+            "attributes": {},
+            "url": "https://strava.com/clubs/vandra"
+          },
+          "hint": "",
+          "id": "f81a4c41-7d9f-4ebd-80cb-3ee59999170c",
+          "key": "strava_url",
+          "name": "Strava URL",
+          "requireHttps": true,
+          "type": "link"
+        }
+      ],
+      "key": "shared",
+      "name": "Shared",
+      "repeatable": false,
+      "specialType": "shared",
+      "useFeed": false
+    },
+    {
+      "id": "94899b36-cf91-4c62-a349-5b96d0f5e008",
+      "inputs": [
+        {
+          "altTextRequired": false,
+          "defaultValue": {
+            "altText": "Vandra",
+            "height": 108,
+            "type": "url",
+            "url": "https://assets.better.email/1/f012a3a0-e1e3-4810-a18e-119e7358a14a.png",
+            "width": 108
+          },
+          "dpr": 1,
+          "hint": "",
+          "id": "a497ea8d-5977-4310-b98c-227a6ac6e0b2",
+          "key": "logo",
+          "name": "Logo",
+          "showAltText": false,
+          "type": "image"
+        },
+        {
+          "allowMergeTags": false,
+          "allowNonWebSchemes": false,
+          "customLinkAttributes": [],
+          "defaultValue": {
+            "attributes": {},
+            "url": "https://vandra.example"
+          },
+          "hint": "",
+          "id": "2fa2fe88-867a-49d1-9f0a-7b7f7088a2a6",
+          "key": "url",
+          "name": "URL",
+          "requireHttps": true,
+          "type": "link"
+        }
+      ],
+      "key": "header_brand",
+      "name": "Header Brand",
+      "repeatable": false,
+      "useFeed": false
+    },
+    {
+      "defaultInstancesCount": 4,
+      "id": "a5ac64e4-4a88-4b3f-adb4-2f8c2f06ed4c",
+      "inputs": [
+        {
+          "constraints": [
+            {
+              "type": "mandatory"
+            }
+          ],
+          "defaultValue": "PACKS",
+          "hint": "",
+          "id": "53d94916-ebca-404f-bf36-aef42dfb6374",
+          "key": "label",
+          "name": "Label",
+          "showEmojiButton": false,
+          "type": "string"
+        },
+        {
+          "allowMergeTags": false,
+          "allowNonWebSchemes": false,
+          "customLinkAttributes": [],
+          "defaultValue": {
+            "attributes": {},
+            "url": "https://vandra.example/packs"
+          },
+          "hint": "",
+          "id": "f6fef99d-14fd-4b00-8753-da56867f14e2",
+          "key": "url",
+          "name": "URL",
+          "requireHttps": true,
+          "type": "link"
+        }
+      ],
+      "itemName": "Link",
+      "key": "header_nav",
+      "maxItems": 4,
+      "minItems": 2,
+      "name": "Header Navigation",
+      "repeatable": true,
+      "useFeed": false
+    },
+    {
+      "id": "dca82d13-f363-4ece-bc2d-02fb3fa1fafa",
+      "inputs": [
+        {
+          "defaultValue": "EST. 61.4720° N — OSLO, NORGE",
+          "hint": "",
+          "id": "3aa33f39-3a68-4d41-9702-517aeadd96d8",
+          "key": "tagline",
+          "name": "Tagline",
+          "showEmojiButton": false,
+          "type": "string"
+        },
+        {
+          "hint": "",
+          "id": "0d0bf68a-5cf1-49f2-8afd-e85d8f65df1f",
+          "key": "company_address",
+          "name": "Company address",
+          "sharedInputId": "b51ea332-277b-4552-b294-86d47db77600",
+          "type": "shared"
+        },
+        {
+          "hint": "",
+          "id": "839e9149-43a4-46f9-91f3-f716f70bc3f0",
+          "key": "instagram_url",
+          "name": "Instagram URL",
+          "sharedInputId": "5201dc8e-a128-4ea2-b7ff-d4761db9473c",
+          "type": "shared"
+        },
+        {
+          "hint": "",
+          "id": "b7ffd325-262e-45c4-b007-b732b5ed0dc6",
+          "key": "youtube_url",
+          "name": "YouTube URL",
+          "sharedInputId": "1534fa3c-f43b-495f-ac7c-8e10a0858b3b",
+          "type": "shared"
+        },
+        {
+          "hint": "",
+          "id": "ebbb8b5e-0599-40f5-b189-0ac347b266a6",
+          "key": "strava_url",
+          "name": "Strava URL",
+          "sharedInputId": "f81a4c41-7d9f-4ebd-80cb-3ee59999170c",
+          "type": "shared"
+        },
+        {
+          "defaultValue": "You're receiving this because you signed up at vandra.example.",
+          "hint": "",
+          "id": "0978f2e7-d71c-409c-85a6-f65eb8fc6e77",
+          "key": "signup_note",
+          "name": "Signup note",
+          "showEmojiButton": false,
+          "translatable": true,
+          "type": "string"
+        }
+      ],
+      "key": "footer_content",
+      "name": "Footer Content",
+      "repeatable": false,
+      "useFeed": false
+    }
+  ]
+}

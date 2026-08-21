@@ -1,0 +1,19 @@
+{
+  "$schema": "https://app.better.email/schemas/module.schema.json",
+  "hidden": false,
+  "id": "e2057c93-a14d-47c4-b389-d3517678efa7",
+  "key": "outro",
+  "metadata": {
+    "thumbnail": {
+      "altText": "",
+      "fileSize": 1036296,
+      "format": "image/png",
+      "height": 946,
+      "isResizable": true,
+      "type": "upload",
+      "url": "https://assets.better.email/1/fcc7cb3a-fc8e-4f75-894b-8699517793db.png",
+      "width": 1028
+    }
+  },
+  "name": "Outro"
+}

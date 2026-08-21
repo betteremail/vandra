@@ -1,0 +1,201 @@
+{
+  "$schema": "https://app.better.email/schemas/settings.schema.json",
+  "settings": [
+    {
+      "id": "6c01196a-f448-409b-a927-d2eb353aceee",
+      "inputs": [
+        {
+          "defaultValue": "WP 02 · THE KIT",
+          "hint": "",
+          "id": "82fe2a78-a8f3-4e56-9c79-3e0729d587eb",
+          "key": "waypoint",
+          "name": "Waypoint",
+          "showEmojiButton": false,
+          "type": "string"
+        },
+        {
+          "constraints": [
+            {
+              "type": "mandatory"
+            }
+          ],
+          "defaultValue": "FOUR PIECES. NO PASSENGERS.",
+          "hint": "",
+          "id": "f03d815c-0f40-4134-8c24-e63d2ea6a499",
+          "key": "heading",
+          "name": "Heading",
+          "showEmojiButton": false,
+          "type": "string"
+        }
+      ],
+      "key": "grid",
+      "name": "Section",
+      "repeatable": false,
+      "useFeed": false
+    },
+    {
+      "defaultInstancesCount": 4,
+      "id": "b2ed6c01-6623-4bc4-af65-f476e054ac5e",
+      "inputs": [
+        {
+          "altTextRequired": false,
+          "defaultValue": {
+            "altText": "SKARV 38 PACK",
+            "height": 800,
+            "type": "url",
+            "url": "https://mirror.better.email/1/736e4e3d-d6ae-4fe5-80cb-7382e6353a89.jpg",
+            "width": 800
+          },
+          "dpr": 1,
+          "hint": "",
+          "id": "3aaeb3ff-5719-43c9-9ab0-00eae46861f5",
+          "key": "image",
+          "name": "Image",
+          "showAltText": true,
+          "type": "image"
+        },
+        {
+          "constraints": [
+            {
+              "type": "mandatory"
+            }
+          ],
+          "defaultValue": "SKARV 38 PACK",
+          "hint": "",
+          "id": "588accd5-7b62-4c47-a3fe-a5a5a1a28650",
+          "key": "name",
+          "name": "Name",
+          "showEmojiButton": false,
+          "type": "string"
+        },
+        {
+          "constraints": [
+            {
+              "type": "maxChar",
+              "value": 60
+            }
+          ],
+          "defaultValue": "Carries a week. Forgets it's there.",
+          "hint": "",
+          "id": "39c55d04-5a61-4116-be18-36715da136fc",
+          "key": "tagline",
+          "name": "Tagline",
+          "showEmojiButton": false,
+          "type": "string"
+        },
+        {
+          "defaultValue": "€189",
+          "hint": "",
+          "id": "3c681b1b-a45c-47d5-b660-199af081525c",
+          "key": "price",
+          "name": "Price",
+          "showEmojiButton": false,
+          "type": "string"
+        },
+        {
+          "allowMergeTags": false,
+          "allowNonWebSchemes": false,
+          "customLinkAttributes": [],
+          "defaultValue": {
+            "url": "https://vandra.example/products/skarv-38"
+          },
+          "hint": "",
+          "id": "e82166ad-9de2-48b8-9bc4-29f1d129e95d",
+          "key": "url",
+          "name": "URL",
+          "requireHttps": true,
+          "type": "link"
+        },
+        {
+          "defaultValue": "none",
+          "hint": "",
+          "id": "ce1f1e77-4ec1-4241-a790-a43c2835c882",
+          "key": "badge",
+          "name": "Badge",
+          "options": [
+            {
+              "id": "4b36b97c-0da6-4ad9-aaf6-faedb2d39ac8",
+              "name": "None",
+              "value": "none"
+            },
+            {
+              "id": "67ef1a6d-7465-425d-97bd-573ffd853f44",
+              "name": "New",
+              "value": "new"
+            },
+            {
+              "id": "d3f81b7d-5c76-49e9-87b7-cbb8071cd3e2",
+              "name": "Sale",
+              "value": "sale"
+            }
+          ],
+          "removeBlank": true,
+          "type": "select"
+        },
+        {
+          "hint": "",
+          "id": "fd80581b-2316-4108-992e-e425038ac329",
+          "key": "sale_discount",
+          "name": "Sale discount",
+          "only_show_if": "products.badge == \"sale\"",
+          "options": [
+            {
+              "id": "dfb9b1fd-459f-408a-9e2d-7ee5b932f4bb",
+              "name": "10%",
+              "value": "10"
+            },
+            {
+              "id": "4f478e33-e3ca-44df-a352-019869471287",
+              "name": "15%",
+              "value": "15"
+            },
+            {
+              "id": "2d77fab9-4595-4797-8448-85aa4dc8295c",
+              "name": "20%",
+              "value": "20"
+            },
+            {
+              "id": "dff11575-ceef-4ab9-ae9b-55006fa89ffb",
+              "name": "25%",
+              "value": "25"
+            },
+            {
+              "id": "fbf50bb3-40cd-424f-8296-6619876fff85",
+              "name": "30%",
+              "value": "30"
+            },
+            {
+              "id": "a4f07a40-142e-4065-be8b-0063fa9fabe9",
+              "name": "35%",
+              "value": "35"
+            },
+            {
+              "id": "b32e1807-bb60-4780-a7ac-3a0efa983a36",
+              "name": "40%",
+              "value": "40"
+            },
+            {
+              "id": "55cbc747-289c-43bf-8e84-8ab3b1bcd34a",
+              "name": "45%",
+              "value": "45"
+            },
+            {
+              "id": "ef49492a-8cdf-4102-b5cc-b3145996cc12",
+              "name": "50%",
+              "value": "50"
+            }
+          ],
+          "removeBlank": false,
+          "type": "select"
+        }
+      ],
+      "itemName": "Product",
+      "key": "products",
+      "maxItems": 8,
+      "minItems": 2,
+      "name": "Products",
+      "repeatable": true,
+      "useFeed": false
+    }
+  ]
+}

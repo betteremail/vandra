@@ -1,0 +1,19 @@
+{
+  "$schema": "https://app.better.email/schemas/module.schema.json",
+  "hidden": false,
+  "id": "f0d7721d-a942-416f-8964-73c13c561846",
+  "key": "hero",
+  "metadata": {
+    "thumbnail": {
+      "altText": "",
+      "fileSize": 777770,
+      "format": "image/png",
+      "height": 1194,
+      "isResizable": true,
+      "type": "upload",
+      "url": "https://assets.better.email/1/bbbd6a46-55a3-4134-a036-110124224e25.png",
+      "width": 1114
+    }
+  },
+  "name": "Hero"
+}

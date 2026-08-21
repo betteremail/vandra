@@ -1,0 +1,53 @@
+{
+  "$schema": "https://app.better.email/schemas/settings.schema.json",
+  "settings": [
+    {
+      "id": "d493de21-dd1a-45c5-a208-5e0cdaac38e8",
+      "inputs": [
+        {
+          "defaultValue": "Hei there —",
+          "hint": "",
+          "id": "4782bcb2-f9b5-42e4-935c-2afc05ede730",
+          "key": "greeting",
+          "name": "Greeting",
+          "showEmojiButton": false,
+          "type": "string"
+        },
+        {
+          "colorOptions": [],
+          "customLinkAttributes": [],
+          "customTags": [],
+          "defaultValue": {
+            "rendered": "Last season you logged 23 days on the trail. We spent ours building the gear for your next one — cut from the three fabrics we trust above the treeline, and nothing we wouldn't carry ourselves.",
+            "type": "rich"
+          },
+          "enableColorPicker": false,
+          "hint": "",
+          "id": "9fec9175-afc7-4a6e-9735-1e95217e6d1f",
+          "isTranslatable": false,
+          "key": "body",
+          "linkStyle": "",
+          "name": "Body",
+          "showEmojiButton": true,
+          "showMergeTagButton": true,
+          "translatable": true,
+          "type": "text"
+        },
+        {
+          "defaultValue": "— THE VANDRA FIELD TEAM",
+          "hint": "",
+          "id": "5383bfeb-3973-4fb4-b40b-165048962b3e",
+          "key": "signoff",
+          "name": "Signoff",
+          "showEmojiButton": false,
+          "translatable": true,
+          "type": "string"
+        }
+      ],
+      "key": "intro",
+      "name": "Personal note",
+      "repeatable": false,
+      "useFeed": false
+    }
+  ]
+}

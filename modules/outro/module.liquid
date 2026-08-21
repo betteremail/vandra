@@ -1,0 +1,12 @@
+<table class="w-full" width="640" cellspacing="0" cellpadding="0" border="0" style="width:640px;">
+<tr><td>
+{% if outro.show_watermark %}{{ outro.image | imgTag: width: 640, height: 420, dpr: 2, class: "w-full", draw1_url: global.logo_white_url, draw1_width: 96, draw1_right: 48, draw1_bottom: 48, draw1_opacity: 0.85 }}{% else %}{{ outro.image | imgTag: width: 640, height: 420, dpr: 2, class: "w-full" }}{% endif %}
+</td></tr>
+<tr><td height="48" style="height:48px;">&nbsp;</td></tr>
+<tr><td align="center" class="tx-ink" style="font-family:{{ global.font_heading }}; font-weight:900; font-size:28px; line-height:34px; color:{{ global.ink }}; text-transform:uppercase;">{{ outro.heading }}</td></tr>
+{% if outro.link_label != blank %}
+<tr><td height="18" style="height:18px; font-size:1px; line-height:1px; mso-line-height-rule:exactly;">&nbsp;</td></tr>
+<tr><td align="center"><a href="{{ outro.link_url.url }}" target="_blank" style="font-family:{{ global.font_mono }}; font-weight:600; font-size:12px; line-height:16px; letter-spacing:1px; color:{{ global.blaze }}; text-decoration:none;">{{ outro.link_label }}</a></td></tr>
+{% endif %}
+<tr><td height="56" style="height:56px;">&nbsp;</td></tr>
+</table>

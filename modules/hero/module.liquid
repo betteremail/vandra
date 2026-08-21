@@ -1,0 +1,31 @@
+<table class="w-full" width="640" cellspacing="0" cellpadding="0" border="0" style="width:640px;">
+<tr><td>{{ hero.image | imgTag: width: 640, height: hero.image_height, dpr: 2, class: "w-full" }}</td></tr>
+<tr><td height="48" style="height:48px;">&nbsp;</td></tr>
+<tr><td>
+<table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
+<td width="40" style="width:40px;">&nbsp;</td>
+<td>
+<table cellspacing="0" cellpadding="0" border="0"><tr>
+<td width="10" height="10" style="width:10px; height:10px; background-color:{{ global.blaze }}; font-size:1px; line-height:1px; mso-line-height-rule:exactly;">&nbsp;</td>
+<td width="14" style="width:14px; font-size:1px;">&nbsp;</td>
+<td style="font-family:{{ global.font_mono }}; font-weight:600; font-size:12px; line-height:14px; letter-spacing:3px; color:{{ global.blaze }};">{{ hero.waypoint }}</td>
+</tr></table>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td height="22" style="height:22px;">&nbsp;</td></tr>
+<tr><td class="h-hero tx-ink" style="font-family:{{ global.font_heading }}; font-weight:900; font-size:44px; line-height:48px; color:{{ global.ink }}; text-transform:uppercase;">{{ hero.headline }}</td></tr>
+<tr><td height="20" style="height:20px;">&nbsp;</td></tr>
+<tr><td class="tx-body" style="font-family:{{ global.font_body }}; font-size:15px; line-height:24px; color:{{ global.granite }};">{{ hero.body }}</td></tr>
+{% if hero.show_cta %}
+<tr><td height="30" style="height:30px;">&nbsp;</td></tr>
+<tr><td>
+<!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{ cta.cta_url.url }}" style="width:220px; height:48px; v-text-anchor:middle;" arcsize="12%" stroke="f" fillcolor="{{ global.blaze }}"><w:anchorlock/><center><![endif]-->
+<a href="{{ cta.cta_url.url }}" target="_blank" style="background-color:{{ global.blaze }}; border-radius:6px; color:#FFFFFF; display:inline-block; font-family:{{ global.font_body }}; font-weight:700; font-size:14px; line-height:20px; text-align:center; text-decoration:none; padding:14px 32px; mso-padding-alt:0 32px; mso-border-alt:none;">{{ cta.cta_label }}</a>
+<!--[if mso]></center></v:roundrect><![endif]-->
+</td></tr>
+{% endif %}
+</table>
+</td>
+<td width="40" style="width:40px;">&nbsp;</td>
+</tr></table>
+</td></tr>
+</table>

@@ -1,0 +1,65 @@
+{
+  "$schema": "https://app.better.email/schemas/settings.schema.json",
+  "settings": [
+    {
+      "id": "4789c78d-98dd-480e-acfe-c3c9ea4fe776",
+      "inputs": [
+        {
+          "defaultValue": "EST. 61.4720° N — OSLO, NORGE",
+          "hint": "",
+          "id": "1784c757-27bd-462e-8af4-090749117ab5",
+          "key": "tagline",
+          "name": "Tagline",
+          "showEmojiButton": false,
+          "type": "string"
+        },
+        {
+          "hint": "",
+          "id": "6283d52d-c523-4127-b37f-7be2b958d271",
+          "key": "company_address",
+          "name": "Company address",
+          "sharedInputId": "b51ea332-277b-4552-b294-86d47db77600",
+          "type": "shared"
+        },
+        {
+          "hint": "",
+          "id": "949c600b-af2d-4c7c-86b8-6d3e966d486c",
+          "key": "instagram_url",
+          "name": "Instagram URL",
+          "sharedInputId": "5201dc8e-a128-4ea2-b7ff-d4761db9473c",
+          "type": "shared"
+        },
+        {
+          "hint": "",
+          "id": "f3189a04-ea9c-4a1e-bc23-b90f0be762d9",
+          "key": "youtube_url",
+          "name": "YouTube URL",
+          "sharedInputId": "1534fa3c-f43b-495f-ac7c-8e10a0858b3b",
+          "type": "shared"
+        },
+        {
+          "hint": "",
+          "id": "39dcb672-6dc3-4733-b532-51408b0c649b",
+          "key": "strava_url",
+          "name": "Strava URL",
+          "sharedInputId": "f81a4c41-7d9f-4ebd-80cb-3ee59999170c",
+          "type": "shared"
+        },
+        {
+          "defaultValue": "You're receiving this because you signed up at vandra.example.",
+          "hint": "",
+          "id": "e08e332a-3b72-4acc-a0a4-83fe061c04a7",
+          "key": "signup_note",
+          "name": "Signup note",
+          "showEmojiButton": false,
+          "translatable": true,
+          "type": "string"
+        }
+      ],
+      "key": "footer",
+      "name": "Footer",
+      "repeatable": false,
+      "useFeed": false
+    }
+  ]
+}

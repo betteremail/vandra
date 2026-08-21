@@ -1,0 +1,19 @@
+{
+  "$schema": "https://app.better.email/schemas/module.schema.json",
+  "hidden": false,
+  "id": "22217583-37ed-4f53-aaab-a0327c846cda",
+  "key": "personal_note",
+  "metadata": {
+    "thumbnail": {
+      "altText": "",
+      "fileSize": 52254,
+      "format": "image/png",
+      "height": 342,
+      "isResizable": true,
+      "type": "upload",
+      "url": "https://assets.better.email/1/820b8a95-84bf-4f1d-b865-59d12e07d43f.png",
+      "width": 978
+    }
+  },
+  "name": "Personal note"
+}

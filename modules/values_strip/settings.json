@@ -1,0 +1,78 @@
+{
+  "$schema": "https://app.better.email/schemas/settings.schema.json",
+  "settings": [
+    {
+      "id": "e32f9502-c30e-44bb-8126-ce39ad57ead7",
+      "inputs": [
+        {
+          "allowCustomColor": false,
+          "defaultValue": "#E2E7E0",
+          "hint": "",
+          "id": "596f172f-b516-4467-95ed-53972ecc7214",
+          "key": "background",
+          "name": "Background",
+          "options": [
+            {
+              "id": "cf525ad9-64a6-4fdb-b12a-b45b9c5fe791",
+              "name": "Mist",
+              "value": "#E2E7E0"
+            },
+            {
+              "id": "771ea8d8-4b02-4a66-87ae-1b908d0e7b87",
+              "name": "Paper",
+              "value": "#EEF0EC"
+            },
+            {
+              "id": "1dfcbe06-0ada-48b1-b256-f8c1a8cf2fbd",
+              "name": "Deep",
+              "value": "#22372E"
+            }
+          ],
+          "type": "color"
+        }
+      ],
+      "key": "band",
+      "name": "Band",
+      "repeatable": false,
+      "useFeed": false
+    },
+    {
+      "defaultInstancesCount": 3,
+      "id": "8983c66d-5ff3-469b-92ad-eb506147237a",
+      "inputs": [
+        {
+          "constraints": [
+            {
+              "type": "maxChar",
+              "value": 6
+            }
+          ],
+          "defaultValue": "78%",
+          "hint": "",
+          "id": "a8c586a7-ffe8-46f9-a2d1-d76c5f230c08",
+          "key": "value",
+          "name": "Value",
+          "showEmojiButton": false,
+          "type": "string"
+        },
+        {
+          "defaultValue": "RECYCLED FABRICS, AND CLIMBING",
+          "hint": "",
+          "id": "121ab867-fec4-4e83-a23f-ea21f6baebf2",
+          "key": "label",
+          "name": "Label",
+          "showEmojiButton": false,
+          "translatable": true,
+          "type": "string"
+        }
+      ],
+      "itemName": "Stat",
+      "key": "stats",
+      "maxItems": 3,
+      "minItems": 2,
+      "name": "Stats",
+      "repeatable": true,
+      "useFeed": false
+    }
+  ]
+}

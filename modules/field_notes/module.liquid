@@ -1,0 +1,36 @@
+<table class="w-full" width="640" cellspacing="0" cellpadding="0" border="0" style="width:640px;">
+{% if story.waypoint != blank %}
+<tr><td height="56" style="height:56px;">&nbsp;</td></tr>
+<tr><td align="center">
+<table cellspacing="0" cellpadding="0" border="0"><tr>
+<td width="10" height="10" style="width:10px; height:10px; background-color:{{ global.blaze }}; font-size:1px; line-height:1px; mso-line-height-rule:exactly;">&nbsp;</td>
+<td width="14" style="width:14px; font-size:1px;">&nbsp;</td>
+<td style="font-family:{{ global.font_mono }}; font-weight:600; font-size:12px; line-height:14px; letter-spacing:3px; color:{{ global.blaze }};">{{ story.waypoint }}</td>
+</tr></table>
+</td></tr>
+<tr><td height="36" style="height:36px;">&nbsp;</td></tr>
+{% endif %}
+<tr><td>
+<table width="100%" cellspacing="0" cellpadding="0" border="0"{% if story.flip %} dir="rtl"{% endif %}><tr>
+<td width="40" style="width:40px;"{% if story.flip %} dir="ltr"{% endif %}>&nbsp;</td>
+<td class="break" width="260" valign="middle" style="width:260px;"{% if story.flip %} dir="ltr"{% endif %}>
+{% if story.show_stamp %}{{ story.image | imgTag: width: 260, height: 334, dpr: 2, class: "w-full", draw1_url: global.stamp_url, draw1_width: 160, draw1_top: 26, draw1_left: 336, draw1_opacity: 0.92 }}{% else %}{{ story.image | imgTag: width: 260, height: 334, dpr: 2, class: "w-full" }}{% endif %}
+</td>
+<td class="break hide" width="30" style="width:30px;"{% if story.flip %} dir="ltr"{% endif %}>&nbsp;</td>
+<td class="break" width="270" valign="middle" style="width:270px;"{% if story.flip %} dir="ltr"{% endif %}>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td height="24" class="show" style="height:24px; display:none; font-size:1px; line-height:1px; mso-line-height-rule:exactly;">&nbsp;</td></tr>
+<tr><td class="tx-ink" style="font-family:{{ global.font_heading }}; font-weight:800; font-size:22px; line-height:28px; color:{{ global.ink }};">{{ story.heading }}</td></tr>
+<tr><td height="14" style="height:14px; font-size:1px; line-height:1px; mso-line-height-rule:exactly;">&nbsp;</td></tr>
+<tr><td class="tx-body" style="font-family:{{ global.font_body }}; font-size:14px; line-height:24px; color:{{ global.granite }};">{{ story.body }}</td></tr>
+{% if story.link_label != blank %}
+<tr><td height="18" style="height:18px; font-size:1px; line-height:1px; mso-line-height-rule:exactly;">&nbsp;</td></tr>
+<tr><td><a href="{{ story.link_url.url }}" target="_blank" style="font-family:{{ global.font_mono }}; font-weight:600; font-size:12px; line-height:16px; letter-spacing:1px; color:{{ global.blaze }}; text-decoration:none;">{{ story.link_label }}</a></td></tr>
+{% endif %}
+</table>
+</td>
+<td width="40" style="width:40px;"{% if story.flip %} dir="ltr"{% endif %}>&nbsp;</td>
+</tr></table>
+</td></tr>
+<tr><td height="56" style="height:56px;">&nbsp;</td></tr>
+</table>

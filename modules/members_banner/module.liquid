@@ -1,0 +1,37 @@
+<table class="w-full" width="640" cellspacing="0" cellpadding="0" border="0" style="width:640px;">
+<tr><td class="bg-deep" style="background-color:{{ global.deep }};">
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td height="52" style="height:52px;">&nbsp;</td></tr>
+<tr>
+<td width="40" style="width:40px;">&nbsp;</td>
+<td align="center">
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+{% if banner.label != blank %}
+<tr><td align="center" style="font-family:{{ global.font_mono }}; font-weight:600; font-size:11px; line-height:14px; letter-spacing:3px; color:{{ global.blaze }};">{{ banner.label }}</td></tr>
+<tr><td height="16" style="height:16px; font-size:1px; line-height:1px; mso-line-height-rule:exactly;">&nbsp;</td></tr>
+{% endif %}
+<tr><td align="center" style="font-family:{{ global.font_heading }}; font-weight:900; font-size:30px; line-height:36px; color:#F2F5F0; text-transform:uppercase;">{{ banner.heading }}</td></tr>
+<tr><td height="14" style="height:14px; font-size:1px; line-height:1px; mso-line-height-rule:exactly;">&nbsp;</td></tr>
+<tr><td align="center" style="font-family:{{ global.font_body }}; font-size:14px; line-height:24px; color:#AEBBB0;">{{ banner.body }}</td></tr>
+{% if banner.cta_label != blank %}
+<tr><td height="26" style="height:26px; font-size:1px; line-height:1px; mso-line-height-rule:exactly;">&nbsp;</td></tr>
+<tr><td align="center">
+<!--[if mso]>
+<table cellspacing="0" cellpadding="0" border="0" style="background-color:transparent; border:2px solid #F2F5F0; border-radius:6px;">
+<tr>
+<![endif]-->
+<a href="{{ banner.cta_url.url }}" target="_blank" style="background-color:transparent; mso-border-alt:none; border:2px solid #F2F5F0; border-radius:6px; color:#F2F5F0; display:inline-block; font-family:{{ global.font_body }}; font-weight:700; font-size:14px; line-height:20px; text-align:center; text-decoration:none; padding:12px 30px;">{{ banner.cta_label }}</a>
+<!--[if mso]>
+</tr>
+</table>
+<![endif]-->
+</td></tr>
+{% endif %}
+</table>
+</td>
+<td width="40" style="width:40px;">&nbsp;</td>
+</tr>
+<tr><td height="52" style="height:52px;">&nbsp;</td></tr>
+</table>
+</td></tr>
+</table>

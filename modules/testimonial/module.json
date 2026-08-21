@@ -1,0 +1,19 @@
+{
+  "$schema": "https://app.better.email/schemas/module.schema.json",
+  "hidden": false,
+  "id": "0558d40c-c6bb-4dbd-b969-5d53f1bfe628",
+  "key": "testimonial",
+  "metadata": {
+    "thumbnail": {
+      "altText": "",
+      "fileSize": 101858,
+      "format": "image/png",
+      "height": 572,
+      "isResizable": true,
+      "type": "upload",
+      "url": "https://assets.better.email/1/d2b666cb-3cd7-458c-891f-df0be79733e5.png",
+      "width": 1028
+    }
+  },
+  "name": "Testimonial"
+}

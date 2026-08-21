@@ -1,0 +1,19 @@
+{
+  "$schema": "https://app.better.email/schemas/module.schema.json",
+  "hidden": false,
+  "id": "d684a61e-f72b-428d-8104-a5dd4662b9b6",
+  "key": "members_banner",
+  "metadata": {
+    "thumbnail": {
+      "altText": "",
+      "fileSize": 41622,
+      "format": "image/png",
+      "height": 454,
+      "isResizable": true,
+      "type": "upload",
+      "url": "https://assets.better.email/1/cc674cce-472b-4f02-93c6-3b91458276a9.png",
+      "width": 1028
+    }
+  },
+  "name": "Members banner"
+}

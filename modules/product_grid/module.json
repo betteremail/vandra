@@ -1,0 +1,19 @@
+{
+  "$schema": "https://app.better.email/schemas/module.schema.json",
+  "hidden": false,
+  "id": "34cc849f-09f9-4e32-b8a5-2959af4bb2f2",
+  "key": "product_grid",
+  "metadata": {
+    "thumbnail": {
+      "altText": "",
+      "fileSize": 834155,
+      "format": "image/png",
+      "height": 1364,
+      "isResizable": true,
+      "type": "upload",
+      "url": "https://assets.better.email/1/598fda26-a2c3-4dab-9bf3-ff8ba93d9784.png",
+      "width": 1012
+    }
+  },
+  "name": "Product grid"
+}

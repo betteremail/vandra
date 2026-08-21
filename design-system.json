@@ -1,0 +1,154 @@
+{
+  "$schema": "https://app.better.email/schemas/design-system.schema.json",
+  "assets": [
+    {
+      "id": "6a7f6895-2d70-4dcd-ab0e-eb2daae11a54",
+      "name": "logo-mark.png",
+      "type": "image/png",
+      "url": "https://assets.better.email/1/f012a3a0-e1e3-4810-a18e-119e7358a14a.png"
+    },
+    {
+      "id": "97bf9a03-87c4-474e-b734-9af4eb58cc45",
+      "name": "badge-new.png",
+      "type": "image/png",
+      "url": "https://assets.better.email/1/6e618d63-898c-4f1b-816d-8145a29a542a.png"
+    },
+    {
+      "id": "b17d87bc-2edd-4050-bdef-1dcb1f984f89",
+      "name": "avatar.jpg",
+      "type": "image/jpeg",
+      "url": "https://assets.better.email/1/b6567290-7b4d-4512-9d2f-142d4eba76c4.jpg"
+    },
+    {
+      "id": "c016a9ad-326f-4dc6-98e0-e919ba281da0",
+      "name": "badge-sale-25.png",
+      "type": "image/png",
+      "url": "https://assets.better.email/1/648a2898-c521-47a9-b01c-68008bbff91c.png"
+    },
+    {
+      "id": "ecd62cd4-1b5a-4084-bb67-87308a5bd6ae",
+      "name": "product-pack.jpg",
+      "type": "image/jpeg",
+      "url": "https://assets.better.email/1/b8466c6f-ec7f-48ae-97f5-5709a5321837.jpg"
+    },
+    {
+      "id": "723b7e8f-2ae3-45b3-ba11-8a462ab7e394",
+      "name": "story-field.jpg",
+      "type": "image/jpeg",
+      "url": "https://assets.better.email/1/14dfa633-0733-41fb-9194-1a5da06eb94d.jpg"
+    },
+    {
+      "id": "9390c931-c846-4ef0-9b59-516439a03c55",
+      "name": "badge-sale-35.png",
+      "type": "image/png",
+      "url": "https://assets.better.email/1/6d88acc8-e4d6-43ce-8f21-5d290ee93d15.png"
+    },
+    {
+      "id": "93d094f2-2e17-4906-a9bd-7fc668a071b9",
+      "name": "badge-sale-10.png",
+      "type": "image/png",
+      "url": "https://assets.better.email/1/7ca80666-b735-4ee6-b6d5-f94644517ec3.png"
+    },
+    {
+      "id": "d49efd21-b575-45ef-9751-2717418eaa21",
+      "name": "badge-sale-30.png",
+      "type": "image/png",
+      "url": "https://assets.better.email/1/f2ccbae0-f7c3-425e-a614-c75a2ac5eb2f.png"
+    },
+    {
+      "id": "8921e3e8-da29-4988-a2da-cb3dec892b58",
+      "name": "badge-verified.png",
+      "type": "image/png",
+      "url": "https://assets.better.email/1/5c38be08-5e19-4686-b927-43ff8af5938e.png"
+    },
+    {
+      "id": "4930e85b-1d7f-4ce1-9920-4648c1f348eb",
+      "name": "story-fabric.jpg",
+      "type": "image/jpeg",
+      "url": "https://assets.better.email/1/1ef9cd52-7aee-4494-80d6-81664d304e48.jpg"
+    },
+    {
+      "id": "684a5451-556a-4999-945f-129ba14a6502",
+      "name": "badge-sale-40.png",
+      "type": "image/png",
+      "url": "https://assets.better.email/1/293080d5-2dfd-420d-b6f2-18d45ff215da.png"
+    },
+    {
+      "id": "2808641f-f8ed-4599-be8f-4fc6edf40bec",
+      "name": "badge-sale-50.png",
+      "type": "image/png",
+      "url": "https://assets.better.email/1/63dff0cf-9a79-4798-80a6-11755c25b3e4.png"
+    },
+    {
+      "id": "f464b3fb-13f0-421f-9daf-ec376050ba26",
+      "name": "product-boot.jpg",
+      "type": "image/jpeg",
+      "url": "https://assets.better.email/1/b44f46f5-f10f-49c7-abb7-23971307ecfb.jpg"
+    },
+    {
+      "id": "2a081c31-5e08-4c0e-a0b9-8fa867854a91",
+      "name": "product-merino.jpg",
+      "type": "image/jpeg",
+      "url": "https://assets.better.email/1/b9c0a5c1-5769-409b-aa5b-85a2379217bd.jpg"
+    },
+    {
+      "id": "bfca96d1-e0a5-4ead-9ed7-b6ba413917ac",
+      "name": "product-shell.jpg",
+      "type": "image/jpeg",
+      "url": "https://assets.better.email/1/1658b6e7-b1fc-46f3-9faa-b4c12c8f591e.jpg"
+    },
+    {
+      "id": "5d00d345-d6ed-4915-8252-6f2eae1fbd10",
+      "name": "logo-mark-white.png",
+      "type": "image/png",
+      "url": "https://assets.better.email/1/979e18f4-3034-499f-a18d-170b53678608.png"
+    },
+    {
+      "id": "0c33abca-c65d-4896-8195-4ecbdc880f7b",
+      "name": "outro.jpg",
+      "type": "image/jpeg",
+      "url": "https://assets.better.email/1/8940212d-2a99-4c81-89e2-05622808c951.jpg"
+    },
+    {
+      "id": "866efccb-3bea-49ed-90ae-138df5fb056c",
+      "name": "badge-sale-15.png",
+      "type": "image/png",
+      "url": "https://assets.better.email/1/badfb061-c1c8-4cb9-aad1-dbca57ab2a40.png"
+    },
+    {
+      "id": "06f1438e-76cc-4b1e-91a9-9b454e54a876",
+      "name": "badge-sale-20.png",
+      "type": "image/png",
+      "url": "https://assets.better.email/1/77516e6f-20e4-408f-93a8-e69b8b3df387.png"
+    },
+    {
+      "id": "4cbb0d44-4462-406d-90e8-f75ad3df1ca4",
+      "name": "stamp-field-tested.png",
+      "type": "image/png",
+      "url": "https://assets.better.email/1/165e1663-eca3-4a61-8a69-da078c06cae4.png"
+    },
+    {
+      "id": "0df75ea1-8d4b-4310-b72d-e2ce7dc0f743",
+      "name": "badge-sale-45.png",
+      "type": "image/png",
+      "url": "https://assets.better.email/1/3ace139b-53ad-4468-b47e-7ce3e00e9b9e.png"
+    },
+    {
+      "id": "8840a6d4-b5db-4697-8f6d-7c3cc8ed8b45",
+      "name": "hero.jpg",
+      "type": "image/jpeg",
+      "url": "https://assets.better.email/1/46463d26-3e73-4ee2-8d37-d4f9be33d0c9.jpg"
+    }
+  ],
+  "contentZones": [
+    {
+      "id": "content",
+      "isDefault": true,
+      "name": "Main",
+      "variable": "content"
+    }
+  ],
+  "metadata": {},
+  "values": {},
+  "version": 3
+}
